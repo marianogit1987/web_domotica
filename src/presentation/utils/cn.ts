@@ -2,11 +2,13 @@
 Función auxiliar para combinar clases de Tailwind de forma dinámica sin conflictos.
 */
 
-import { ClassValue, clsx } from 'clsx';
+// Importación de tipos desde clsx utilizando 'import type'
+import type { ClassValue } from 'clsx';
+import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
 /**
- * Combina clases condicionales con clsx y resuelve conflictos de clases Tailwind con twMerge.
+ * Función de utilidad para fusionar clases condicionales de Tailwind CSS de forma limpia.
  */
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
