@@ -2,19 +2,28 @@
 Sección que maqueta la grilla con los 3 servicios.
 */
 
-import React from 'react';
+import React, { useState } from 'react';
+import type { Service } from '../../logic/models/Service';
 import { SERVICES_DATA } from '../../logic/data/servicesData';
 import { ServiceCard } from '../components/ServiceCard';
+import { ServiceDetailModal } from '../components/ServiceDetailModal';
 
 interface ServicesSectionProps {
-  onOpenContact?: () => void;
+  onOpenContact: () => void;
 }
 
+/**
+ * Sección de Servicios con manejo de modal de detalles.
+ */
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenContact }) => {
+  // Estado para almacenar el servicio seleccionado para el modal de detalle
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
+
   return (
     <section id="servicios" className="py-12 sm:py-20 bg-slate-950 border-y border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
+        {/* ENCABEZADO */}
         <div className="text-center mb-10 sm:mb-16">
           <span className="text-blue-400 font-bold tracking-wider text-[10px] sm:text-xs uppercase bg-blue-950/80 px-3 py-1 rounded-full border border-blue-800/50">
             Lo Que Ofrecemos
@@ -27,13 +36,26 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenContact 
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        {/* GRILLA DE TARJETAS ALINEADAS */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
           {SERVICES_DATA.map((service) => (
-            <ServiceCard key={service.id} service={service} onOpenContact={onOpenContact} />
+            <ServiceCard 
+              key={service.id} 
+              service={service} 
+              onSelectService={(srv) => setSelectedService(srv)}
+              onOpenContact={onOpenContact} 
+            />
           ))}
         </div>
 
       </div>
+
+      {/* MODAL DETALLE DE SERVICIO */}
+      <ServiceDetailModal 
+        service={selectedService}
+        onClose={() => setSelectedService(null)}
+        onOpenContact={onOpenContact}
+      />
     </section>
   );
 };

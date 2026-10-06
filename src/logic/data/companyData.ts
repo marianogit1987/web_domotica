@@ -5,7 +5,7 @@ import type { CompanyInfo } from '../models/CompanyInfo';
  */
 export const COMPANY_DATA: CompanyInfo = {
   title: 'Impulsando la nueva generación de hogares inteligentes',
-  description: 'Somos una empresa especializada en soluciones de domótica e integración tecnológica. Diseñamos e implementamos ecosistemas inteligentes que aportan confort, seguridad y eficiencia energética.',
-  mission: 'Hacer que la tecnología del hogar sea accesible, intuitiva y perfectamente adaptable a las necesidades de cada cliente.',
-  vision: 'Ser referentes en la transformación de espacios residenciales y corporativos en entornos automatizados e interconectados.'
+  description: 'VitalHome es un servicio de asistencia tecnológica para adultos mayores que combina domótica, IoT y software para mejorar su autonomía, seguridad y bienestar dentro del hogar',
+  mission: 'Desarrollar y brindar soluciones tecnológicas integrales que combinen domótica, IoT y software para acompañar a los adultos mayores en su vida cotidiana, promoviendo su autonomía, seguridad y bienestar dentro del hogar.',
+  vision: 'Ser una solución de referencia en asistencia tecnológica para adultos mayores, transformando los hogares en entornos más seguros, accesibles y adaptables, donde la tecnología acompañe a las personas sin limitar su independencia.'
 };

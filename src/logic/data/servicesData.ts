@@ -9,12 +9,12 @@ export const SERVICES_DATA: Service[] = [
   {
     id: 'service-1',
     number: '01',
-    title: 'Instalación y Configuración Domótica',
-    description: 'Nos encargamos de la instalación física y vinculación de todos los dispositivos inteligentes en tu hogar u oficina.',
+    title: 'Autonomía',
+    description: 'Servicio de asistencia básica para adultos mayores que mantienen un alto grado de independencia.',
     features: [
-      'Iluminación inteligente y dimerización',
-      'Cerraduras digitales y control de accesos',
-      'Termostatos y climatización automatizada',
+      'Incorporación herramientas de detección de eventos',
+      'Comunicación y seguimiento de rutinas',
+      'Mayor seguridad en el hogar',
       'Configuración de Hubs y centrales domóticas'
     ],
     iconName: 'Zap' // Ícono de rayo/energía de Lucide
@@ -22,24 +22,24 @@ export const SERVICES_DATA: Service[] = [
   {
     id: 'service-2',
     number: '02',
-    title: 'Diseño de Automatizaciones a Medida',
-    description: 'Creamos escenas y rutinas inteligentes personalizadas adaptadas a tus horarios, preferencias y estilo de vida.',
+    title: 'Acompañamiento',
+    description: 'Servicio de asistencia ampliada para personas que requieren mayor supervisión y apoyo.',
     features: [
-      'Modos "Cine", "Noche", "Fuera de Casa" o "Bienvenida"',
-      'Automatización según sensores de presencia y temperatura',
+      'Incorpora mayores capacidades de monitoreo',
+      'automatización y comunicación con el entorno familiar',
       'Optimización de consumo eléctrico y ahorro energético',
-      'Integración con asistentes de voz (Alexa, Google Assistant)'
+      'Adaptación a una mayor necesidad de acompañamiento.'
     ],
     iconName: 'Settings' // Ícono de engranaje/configuración de Lucide
   },
   {
     id: 'service-3',
     number: '03',
-    title: 'Soporte, Mantenimiento y Asesoramiento',
-    description: 'Acompañamiento continuo para que tu sistema domótico funcione siempre al 100% y sin interrupciones.',
+    title: 'Cuidado Inteligente',
+    description: 'Servicio avanzado para personas que requieren un nivel elevado de asistencia en el hogar.',
     features: [
-      'Asesoramiento técnico pre y post venta',
-      'Mantenimiento preventivo y actualización de firmware',
+      'Integra un ecosistema tecnológico más completo',
+      'Manteniendo como principios la privacidad, la seguridad y el respeto por la persona',
       'Soporte para nuestra App Móvil y plataformas integradas',
       'Diagnóstico y resolución de incidencias en red local'
     ],
