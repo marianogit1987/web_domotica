@@ -10,7 +10,7 @@ import React from 'react';
  */
 export const Footer: React.FC = () => {
   return (
-    <footer id="contacto" className="bg-slate-950 text-slate-500 py-8 border-t border-slate-800/80">
+    <footer id="contacto" className="bg-sky-950/94 text-slate-500 py-8 border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 text-center text-xs sm:text-sm font-medium">
         © {new Date().getFullYear()} HogarInteligente. Todos los derechos reservados.
       </div>
